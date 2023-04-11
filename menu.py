@@ -1,27 +1,16 @@
 from termcolor import colored
 import os
 from menu.ej1LetraDNI import * 
-<<<<<<< HEAD
 from menu.ej2Salario import * 
 from menu.ej3RutaAvion import * 
 from menu.ej4AreaPerimetro import * 
 from menu.ej5MayorMenor import * 
-
-=======
-# from menu.ej2Salario import * 
-# from menu.ej3RutaAvion import * 
-# from menu.ej4AreaPerimetro import * 
-# from menu.ej5MayorMenor import * 
-# from menu.ej6CelAFah import * 
-# from menu.ej7ParImpar import * 
-# from menu.ej8BisiestoONo import * 
 from menu import ej15DeterminaNum
 from menu import ej16XBar
 from menu import ej17Aleatorio
 from menu import ej18Anagrama
 from menu import ej19Duplicados
 from menu import ej20Capicua
->>>>>>> 9635633a4089b11a8293501e90048ffabfd81ed0
 
 
 while True:
@@ -62,7 +51,6 @@ while True:
         print(CalcularAreaPer())
     elif opcion == "5":
         print(CalcularMayMen())
-
     # Jorge 15/16/17/18/19/20
     elif opcion == "15":
         ej15DeterminaNum.determinaNum()
