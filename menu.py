@@ -1,12 +1,9 @@
 from termcolor import colored
-from menu.ej1LetraDNI import * 
-# from menu.ej2Salario import * 
-# from menu.ej3RutaAvion import * 
-# from menu.ej4AreaPerimetro import * 
-# from menu.ej5MayorMenor import * 
-# from menu.ej6CelAFah import * 
-# from menu.ej7ParImpar import * 
-# from menu.ej8BisiestoONo import * 
+from menu.ej5MayorMenor import * 
+from menu.ej6CelAFah import * 
+from menu.ej7ParImpar import * 
+from menu.ej8BisiestoONo import * 
+from menu.ej9Palíndromo import *
 
 
 while True:
@@ -35,6 +32,16 @@ while True:
 
     if opcion == "0":
         break
-    elif opcion == "1":
-        print(LetraDNI())
+    elif opcion == "6":
+        print(celAfah())
+    elif opcion == "7":
+        print(parImpar())
+    elif opcion == "8":
+        print(bisiestoONo())
+    elif opcion == "9":
+        print()
+    elif opcion == "10":
+        print(celAfah())
+    elif opcion == "11":
+        print(celAfah())
         
