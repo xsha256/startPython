@@ -1,12 +1,34 @@
 from termcolor import colored
+
+import os
+#Moha
+from menu.ej1LetraDNI import * 
+from menu.ej2Salario import * 
+from menu.ej3RutaAvion import * 
+from menu.ej4AreaPerimetro import * 
 from menu.ej5MayorMenor import * 
-from menu.ej6CelAFah import * 
-from menu.ej7ParImpar import * 
-from menu.ej8BisiestoONo import * 
-from menu.ej9Palíndromo import *
+#Jose Javier 
+from menu import ej6CelAFah
+from menu import ej7ParImpar
+from menu import ej8BisiestoONo
+from menu import ej9Palíndromo
+from menu import ej10Ordenar
+from menu import ej11Factorial
+from menu import ej12Primo
+from menu import ej13Cubo
+from menu import ej14Suma
+#Jorge
+from menu import ej15DeterminaNum
+from menu import ej16XBar
+from menu import ej17Aleatorio
+from menu import ej18Anagrama
+from menu import ej19Duplicados
+from menu import ej20Capicua
+
 
 
 while True:
+    os.system('clear')
     print(colored("Menú:", "blue"))
     print(colored("1. Calcular la letra del DNI Español", "green"))
     print(colored("2. Calcular el salario de un empleado", "red"))
@@ -31,22 +53,50 @@ while True:
     opcion = input(colored("Seleccione una opción (1-20) o escriba '0' para cerrar el programa: ", "blue"))
 
     if opcion == "0":
+        print("¡Hasta luego!")
         break
+    #Moha 1/2/3/4/5
+    elif opcion == "1":
+        print(LetraDNI())
+    elif opcion == "2":
+        print(salarioBase())
+    elif opcion == "3":
+        print("No esta hecho")
+    elif opcion == "4":
+        print(CalcularAreaPer())
+    elif opcion == "5":
+        print(CalcularMayMen())
+    # Jose Javier 6/7/8/9/10/11/12/13/14
     elif opcion == "6":
-        print(celAfah())
+        print(ej6CelAFah.celAfah())
     elif opcion == "7":
-        print(parImpar())
+        print(ej7ParImpar.parImpar())
     elif opcion == "8":
-        print(bisiestoONo())
+        print(ej8BisiestoONo.bisiestoONo())
     elif opcion == "9":
-        print()
+        print(ej9Palíndromo.Palindromo())
     elif opcion == "10":
-        print(celAfah())
+        print(ej10Ordenar.Ordenar())
     elif opcion == "11":
-        print(celAfah())
+        print(ej11Factorial.Factorial())
     elif opcion == "12":
-        print(celAfah())
+        print(ej12Primo.Primo())
     elif opcion == "13":
-        print(celAfah())
-    
+        print(ej13Cubo.CalCubo())
+    elif opcion == "14":
+        print(ej14Suma.CalNumPares())
+    # Jorge 15/16/17/18/19/20
+    elif opcion == "15":
+        ej15DeterminaNum.determinaNum()
+    elif opcion == "16":
+        ej16XBar.XBar()
+    elif opcion == "17":
+        ej17Aleatorio.Aleatorio()
+    elif opcion == "18":
+        ej18Anagrama.Anagrama()
+    elif opcion == "19":
+        ej19Duplicados.Duplicados()
+    elif opcion == "20":
+        ej20Capicua.Capicua()
+
         
