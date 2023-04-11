@@ -6,6 +6,12 @@ from menu.ej2Salario import *
 from menu.ej3RutaAvion import * 
 from menu.ej4AreaPerimetro import * 
 from menu.ej5MayorMenor import * 
+from menu import ej15DeterminaNum
+from menu import ej16XBar
+from menu import ej17Aleatorio
+from menu import ej18Anagrama
+from menu import ej19Duplicados
+from menu import ej20Capicua
 
 while True:
     os.system('clear')
@@ -48,3 +54,17 @@ while True:
         print(CalcularAreaPer())
     elif opcion == "5":
         print(CalcularMayMen())
+     # Jorge 15/16/17/18/19/20
+    elif opcion == "15":
+        ej15DeterminaNum.determinaNum()
+    elif opcion == "16":
+        ej16XBar.XBar()
+    elif opcion == "17":
+        ej17Aleatorio.Aleatorio()
+    elif opcion == "18":
+        ej18Anagrama.Anagrama()
+    elif opcion == "19":
+        ej19Duplicados.Duplicados()
+    elif opcion == "20":
+        ej20Capicua.Capicua()
+        
