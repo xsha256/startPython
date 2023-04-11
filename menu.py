@@ -1,15 +1,15 @@
 from termcolor import colored
+import os
 from menu.ej1LetraDNI import * 
-# from menu.ej2Salario import * 
-# from menu.ej3RutaAvion import * 
-# from menu.ej4AreaPerimetro import * 
-# from menu.ej5MayorMenor import * 
-# from menu.ej6CelAFah import * 
-# from menu.ej7ParImpar import * 
-# from menu.ej8BisiestoONo import * 
+from menu.ej2Salario import * 
+from menu.ej3RutaAvion import * 
+from menu.ej4AreaPerimetro import * 
+from menu.ej5MayorMenor import * 
+
 
 
 while True:
+    os.system('clear')
     print(colored("Menú:", "blue"))
     print(colored("1. Calcular la letra del DNI Español", "green"))
     print(colored("2. Calcular el salario de un empleado", "red"))
@@ -34,7 +34,17 @@ while True:
     opcion = input(colored("Seleccione una opción (1-20) o escriba '0' para cerrar el programa: ", "blue"))
 
     if opcion == "0":
+        print("¡Hasta luego!")
         break
     elif opcion == "1":
         print(LetraDNI())
+    elif opcion == "2":
+        print(salarioBase())
+    elif opcion == "3":
+        print("No esta hecho")
+    elif opcion == "4":
+        print(CalcularAreaPer())
+    elif opcion == "5":
+        print(CalcularMayMen())
+
         

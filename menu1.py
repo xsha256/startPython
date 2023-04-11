@@ -1,0 +1,50 @@
+from prettytable import PrettyTable
+from termcolor import colored
+import os
+from menu.ej1LetraDNI import * 
+from menu.ej2Salario import * 
+from menu.ej3RutaAvion import * 
+from menu.ej4AreaPerimetro import * 
+from menu.ej5MayorMenor import * 
+
+while True:
+    os.system('clear')
+    tabla = PrettyTable()
+    tabla.field_names = ["#", "Descripción"]
+    tabla.align["Descripción"] = "l"
+    tabla.add_row([colored("1", "blue"), colored("Calcular la letra del DNI Español", "green")])
+    tabla.add_row([colored("2", "blue"), colored("Calcular el salario de un empleado", "red")])
+    tabla.add_row([colored("3", "blue"), colored("Determinar la ruta para llegar a una ciudad por avión. [Con base de datos]", "white")])
+    tabla.add_row([colored("4", "blue"), colored("Calcular el área y perímetro de un círculo dado su radio", "blue")])
+    tabla.add_row([colored("5", "blue"), colored("Dada una lista de números enteros, determinar cuál es el mayor y cuál es el menor", "red")])
+    tabla.add_row([colored("6", "blue"), colored("Convertir grados Celsius a Fahrenheit", "green")])
+    tabla.add_row([colored("7", "blue"), colored("Determinar si un número entero es par o impar", "yellow")])
+    tabla.add_row([colored("8", "blue"), colored("Determinar si un año es bisiesto o no", "white")])
+    tabla.add_row([colored("9", "blue"), colored("Determinar si una cadena de texto es un palíndromo o no", "red")])
+    tabla.add_row([colored("10", "blue"), colored("Ordenar alfabéticamente una lista de nombres", "blue")])
+    tabla.add_row([colored("11", "blue"), colored("Calcular el factorial de un número entero", "yellow")])
+    tabla.add_row([colored("12", "blue"), colored("Determinar si un número entero es primo o no", "grey")])
+    tabla.add_row([colored("13", "blue"), colored("Calcular el área y volumen de un cubo dado su lado", "magenta")])
+    tabla.add_row([colored("14", "blue"), colored("Calcular la suma de todos los números pares de una lista de números enteros", "cyan")])
+    tabla.add_row([colored("15", "blue"), colored("Determinar si un número es positivo, negativo o cero", "red")])
+    tabla.add_row([colored("16", "blue"), colored("Calcular la media de una lista de números enteros", "blue")])
+    tabla.add_row([colored("17", "blue"), colored("Juego: adivinar un número aleatorio entre 1 y 100", "white")])
+    tabla.add_row([colored("18", "blue"), colored("Determinar si una cadena de texto es un anagrama de otra cadena de texto", "green")])
+    tabla.add_row([colored("19", "blue"), colored("Eliminar los números duplicados de una lista de números enteros", "yellow")])
+    tabla.add_row([colored("20", "blue"), colored("Determinar si un número es capicúa o no", "red")])
+
+    print(colored(tabla.get_string(), "blue"))
+    opcion = input(colored("Seleccione una opción (1-20) o escriba '0' para cerrar el programa: ", "blue"))
+
+    if opcion == "0":
+        break
+    elif opcion == "1":
+        print(LetraDNI())
+    elif opcion == "2":
+        print(salarioBase())
+    elif opcion == "3":
+        print("No esta hecho")
+    elif opcion == "4":
+        print(CalcularAreaPer())
+    elif opcion == "5":
+        print(CalcularMayMen())
