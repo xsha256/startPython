@@ -44,4 +44,9 @@ while True:
         print(celAfah())
     elif opcion == "11":
         print(celAfah())
+    elif opcion == "12":
+        print(celAfah())
+    elif opcion == "13":
+        print(celAfah())
+    
         
