@@ -3,18 +3,21 @@
 import random
 
 def Aleatorio():
-    numAleatorio = random.randint(1, 100)
-    print(numAleatorio)
-    num = int(input("Adivina el número aleatorio: "))
-    while num != numAleatorio:             
-        if num > numAleatorio:
-            print("El número introducido mayor que el número aleatorio")
-            num = int(input("Introduce un numero menor: "))
-            
-        elif num < numAleatorio:
-            print("El número introducido menor que el número aleatorio")
-            num = int(input("Introduce un numero mayor: "))
-            
-    print(f"Has adivinado el número correctamente")
+    op = "si"
+    while op == "si":
+        numAleatorio = random.randint(1, 100)
+        print(numAleatorio)
+        num = int(input("Adivina el número aleatorio: "))
+        while num != numAleatorio:             
+            if num > numAleatorio:
+                print("El número introducido mayor que el número aleatorio")
+                num = int(input("Introduce un numero menor: "))
+                
+            elif num < numAleatorio:
+                print("El número introducido menor que el número aleatorio")
+                num = int(input("Introduce un numero mayor: "))
+                
+        print(f"Has adivinado el número correctamente")
+        choose = input("Quieres jugar otra vez? 'si' o 'no': ")
+        op = choose.lower()
     
-#Aleatorio()

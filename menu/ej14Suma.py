@@ -1,10 +1,14 @@
-def CalNumPares(lista):
-    pares = 0 
-    for num in lista:
-        if num % 2 == 0:
-            pares = pares + num
-    print(f"La suma de todos los numeros pares: {pares}")
+def CalNumPares():
+
+    op = "si"
+    while op == "si":
+        numeros = input("Introduce una lista de números separados por espacios: ").split()
+        pares = 0
+        for num in numeros:
+            if int(num) % 2 == 0:
+                pares = pares + int(num)
+        print(f"La suma de todos los numeros pares: {pares}")
+        choose = input("Quieres introducir otra lista de numeros? 'si' o 'no': ")
+        op = choose.lower()
 
 
-lista = [1, 2, 4, 5, 6, 10, 10]
-CalNumPares(lista)

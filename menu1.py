@@ -6,6 +6,17 @@ from menu.ej2Salario import *
 from menu.ej3RutaAvion import * 
 from menu.ej4AreaPerimetro import * 
 from menu.ej5MayorMenor import * 
+#Jose Javier 
+from menu import ej6CelAFah
+from menu import ej7ParImpar
+from menu import ej8BisiestoONo
+from menu import ej9Palíndromo
+from menu import ej10Ordenar
+from menu import ej11Factorial
+from menu import ej12Primo
+from menu import ej13Cubo
+from menu import ej14Suma
+#Jorge
 from menu import ej15DeterminaNum
 from menu import ej16XBar
 from menu import ej17Aleatorio
@@ -43,6 +54,7 @@ while True:
     opcion = input(colored("Seleccione una opción (1-20) o escriba '0' para cerrar el programa: ", "blue"))
 
     if opcion == "0":
+        print("¡Hasta luego!")
         break
     elif opcion == "1":
         print(LetraDNI())
@@ -54,6 +66,25 @@ while True:
         print(CalcularAreaPer())
     elif opcion == "5":
         print(CalcularMayMen())
+            # Jose Javier 6/7/8/9/10/11/12/13/14
+    elif opcion == "6":
+        print(ej6CelAFah.celAfah())
+    elif opcion == "7":
+        print(ej7ParImpar.parImpar())
+    elif opcion == "8":
+        print(ej8BisiestoONo.bisiestoONo())
+    elif opcion == "9":
+        print(ej9Palíndromo.Palindromo())
+    elif opcion == "10":
+        print(ej10Ordenar.Ordenar())
+    elif opcion == "11":
+        print(ej11Factorial.Factorial())
+    elif opcion == "12":
+        print(ej12Primo.Primo())
+    elif opcion == "13":
+        print(ej13Cubo.CalCubo())
+    elif opcion == "14":
+        print(ej14Suma.CalNumPares())
      # Jorge 15/16/17/18/19/20
     elif opcion == "15":
         ej15DeterminaNum.determinaNum()

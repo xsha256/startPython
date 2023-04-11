@@ -1,18 +1,21 @@
 #! Crea un algoritmo que determine si una cadena de texto es un anagrama de otra cadena de texto.
 
 def Anagrama():
-    palabra1 = input("Escribe la primera palabra: ").lower()
-    palabra2 = input("Escribe la seguna palabra: ").lower()
+    op = "si"
+    while op == "si":
 
-    if len(palabra1) != len(palabra2):
-        print("Las palabras no son anagramas")
+        palabra1 = input("Escribe la primera palabra: ").lower()
+        palabra2 = input("Escribe la seguna palabra: ").lower()
 
-    else:
-
-        if sorted(palabra1) == sorted(palabra2):
-            print("Las palabras son anagramas")
-        else:
+        if len(palabra1) != len(palabra2):
             print("Las palabras no son anagramas")
 
+        else:
 
-# Anagrama()
+            if sorted(palabra1) == sorted(palabra2):
+                print("Las palabras son anagramas")
+            else:
+                print("Las palabras no son anagramas")
+
+        choose = input("Quieres introducir otras palabras? 'si' o 'no': ")
+        op = choose.lower()

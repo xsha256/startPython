@@ -17,5 +17,5 @@ def salarioBase():
         sueldoNeto = sueldoBruto - descuentoIm - descuentoSS
         print(f"Tu sueldo neto es: {sueldoNeto: .2f}")
 
-        choose = input("Quieres calcular otro sueldo 'si' o 'no': ")
+        choose = input("Quieres calcular otro sueldo? 'si' o 'no': ")
         op = choose.lower()

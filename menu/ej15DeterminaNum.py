@@ -12,9 +12,3 @@ def determinaNum():
         print(f"El numero {num} es: cero")
 
 
-# determinaNum(1)
-# determinaNum(2)
-# determinaNum(20)
-# determinaNum(-12)
-# determinaNum(0)
-# determinaNum(-1)

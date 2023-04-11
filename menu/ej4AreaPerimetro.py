@@ -19,7 +19,7 @@ def CalcularAreaPer():
                 print(f"  El área es: {area:.2f}")
                 print(f"  El perímetro es: {perimetro:.2f}")
                 print(f"+------------------------------+")
-                choose = input("Quieres calcular otro área y perímetro 'si' o 'no': ")
+                choose = input("Quieres calcular otro área y perímetro? 'si' o 'no': ")
                 op = choose.lower()
 
             else:

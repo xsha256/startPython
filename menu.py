@@ -12,7 +12,7 @@ from menu import ej6CelAFah
 from menu import ej7ParImpar
 from menu import ej8BisiestoONo
 from menu import ej9Palíndromo
-from menu import ej10Ordenar
+from menu import ej10Ordenar    
 from menu import ej11Factorial
 from menu import ej12Primo
 from menu import ej13Cubo
