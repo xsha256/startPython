@@ -17,4 +17,4 @@ def Aleatorio():
             
     print(f"Has adivinado el número correctamente")
     
-Aleatorio()
+#Aleatorio()

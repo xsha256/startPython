@@ -7,6 +7,12 @@ from menu.ej1LetraDNI import *
 # from menu.ej6CelAFah import * 
 # from menu.ej7ParImpar import * 
 # from menu.ej8BisiestoONo import * 
+from menu import ej15DeterminaNum
+from menu import ej16XBar
+from menu import ej17Aleatorio
+from menu import ej18Anagrama
+from menu import ej19Duplicados
+from menu import ej20Capicua
 
 
 while True:
@@ -37,4 +43,17 @@ while True:
         break
     elif opcion == "1":
         print(LetraDNI())
+    # Jorge 15/16/17/18/19/20
+    elif opcion == "15":
+        ej15DeterminaNum.determinaNum()
+    elif opcion == "16":
+        ej16XBar.XBar()
+    elif opcion == "17":
+        ej17Aleatorio.Aleatorio()
+    elif opcion == "18":
+        ej18Anagrama.Anagrama()
+    elif opcion == "19":
+        ej19Duplicados.Duplicados()
+    elif opcion == "20":
+        ej20Capicua.Capicua()
         

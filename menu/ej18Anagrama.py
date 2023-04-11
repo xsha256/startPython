@@ -15,4 +15,4 @@ def Anagrama():
             print("Las palabras no son anagramas")
 
 
-Anagrama()
+# Anagrama()
