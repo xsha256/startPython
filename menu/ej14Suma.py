@@ -17,5 +17,3 @@ def CalNumPares():
             "Quieres introducir otra lista de numeros? 'si' o 'no': ")
         op = choose.lower()
 
-
-CalNumPares()
