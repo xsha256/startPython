@@ -10,12 +10,12 @@ def LetraDNI():
 
             resto = int(numero) % 23
             print(f"La letra del DNI introducido es: {letraDNI[resto]}")
-            choose = input("Quieres buscar otra letra del DNI? 'si' o 'no': ")
+            choose = input("Si quieres continuar teclea 'si', sino pulse cualquier otra tecla: ")
             op = choose.lower()
-            
 
         else:
             print("DNI inválido")
 
     print("¡Hasta luego!")
 
+# LetraDNI()

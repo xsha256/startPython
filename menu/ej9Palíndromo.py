@@ -15,6 +15,8 @@ def Palindromo():
         else:
             print(f"La cadena {cadenaOri} no es un palíndromo")
         
-        choose = input("Quieres introducir otra palabra? 'si' o 'no': ")
+        choose = input("Si quieres continuar teclea 'si', sino pulse cualquier otra tecla: ")
         op = choose.lower()
+    print("¡Hasta luego!")
 
+#Palindromo()

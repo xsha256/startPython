@@ -3,16 +3,20 @@
 def Duplicados():
     op = "si"
     while op == "si":
-        lista = input("Introduce una lista de números separados por espacios: ").split()
-        nuevaLista = []
-        for num in lista:
-            if int(num) not in nuevaLista:
-                nuevaLista.append(int(num))
+        try: 
+            lista = input("Introduce una lista de números separados por espacios: ").split()
+            nuevaLista = []
+            for num in lista:
+                if int(num) not in nuevaLista:
+                    nuevaLista.append(int(num))
 
-        print(f"La nueva lista sin repetidos es: {nuevaLista}")
+            print(f"La nueva lista sin repetidos es: {nuevaLista}")
         
-        choose = input("Quieres introducir otra lista de numeros? 'si' o 'no': ")
+        except:
+            print("No has introducido un numero")
+        
+        choose = input("Si quieres continuar teclea 'si', sino pulse cualquier otra tecla: ")
         op = choose.lower()
+    print("¡Hasta luego!")
 
-
-
+#Duplicados()

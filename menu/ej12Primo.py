@@ -14,11 +14,17 @@ def EsPrimo(n):
 def Primo():
     op = "si"
     while op == "si":
-        n = int(input("Introduce un número: "))
-        if EsPrimo(n):
-            print(f"{n}: es primo")
-        else:
-            print(f"{n}: no es primo")
-        choose = input("Quieres introducir otro numero? 'si' o 'no': ")
-        op = choose.lower()
+        try:
+            n = int(input("Introduce un número: "))
+            if EsPrimo(n):
+                print(f"{n}: es primo")
+            else:
+                print(f"{n}: no es primo")
+        except:
+            print("No has introducido un numero")
         
+        choose = input("Si quieres continuar teclea 'si', sino pulse cualquier otra tecla: ")
+        op = choose.lower()
+    print("¡Hasta luego!")
+        
+#Primo()

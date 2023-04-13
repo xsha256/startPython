@@ -16,6 +16,9 @@ def Anagrama():
                 print("Las palabras son anagramas")
             else:
                 print("Las palabras no son anagramas")
-
-        choose = input("Quieres introducir otras palabras? 'si' o 'no': ")
+        
+        choose = input("Si quieres continuar teclea 'si', sino pulse cualquier otra tecla: ")
         op = choose.lower()
+    print("¡Hasta luego!")
+
+#Anagrama()
