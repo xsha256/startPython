@@ -1,4 +1,4 @@
-# NextStepPython
+# Start Python
 
 > ### Mohamed Amri
 > ### José Javier Gil Mortes
@@ -34,7 +34,8 @@
 2. Calcular el salario de un empleado
 3. Determinar la ruta para llegar a una ciudad por avión. [Con base de datos]
 4. Calcula el área y perímetro de un círculo dado su radio.
-5. Dada una lista de números enteros, determina cuál es el mayor y cuál es el menor. 6. Crea un programa en Python que convierta grados Celsius a Fahrenheit.
+5. Dada una lista de números enteros, determina cuál es el mayor y cuál es el menor. 
+6. Crea un programa en Python que convierta grados Celsius a Fahrenheit.
 7. Dado un número entero, crea un programa en Python que determine si es par o impar.
 8. Crea un programa en Python que determine si un año es bisiesto o no.
 9. Crea un programa en Python que determine si una cadena de texto es un palíndromo o no.
